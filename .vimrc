@@ -1,22 +1,15 @@
-"autocmd vimenter * NERDTree
 
-"pathogen begin
-
-execute pathogen#infect()
 syntax on
 filetype plugin on
 filetype indent on
 
-"pathogen end
-
 set nocompatible
 set number
+set hlsearch
+set tabstop=4
+set noautoindent
+set path=$PWD/**
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => NERDTree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>n :NERDTreeToggle<cr>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "reference from https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
